@@ -1,0 +1,19 @@
+--- a/native/Avalonia.Native/src/OSX/app.mm
++++ b/native/Avalonia.Native/src/OSX/app.mm
+@@ -99,14 +99,14 @@
+ 
+ - (void)application:(NSApplication *)sender openFiles:(NSArray<NSString *> *)filenames
+ {
+-    auto array = CreateAvnStringArray(filenames);
++    ComPtr<IAvnStringArray> array(CreateAvnStringArray(filenames), true);
+     
+     _events->FilesOpened(array);
+ }
+ 
+ - (void)application:(NSApplication *)application openURLs:(NSArray<NSURL *> *)urls
+ {
+-    auto array = CreateAvnStringArray(urls);
++    ComPtr<IAvnStringArray> array(CreateAvnStringArray(urls), true);
+     
+     _events->UrlsOpened(array);
+ }

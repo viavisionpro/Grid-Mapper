@@ -1,0 +1,305 @@
+{
+  "commit": "8eeda4f6f546165b3f72e63c9f42247abb306905",
+  "files": [
+    {
+      "path": "Directory.Packages.props",
+      "gitBlobSha1": "cab8a1844f0de787c6e9a4c6d355fdec40857701"
+    },
+    {
+      "path": "build/AvaloniaNative.props",
+      "gitBlobSha1": "fd51d874f95c2eb0f2f99e73115f9895b65aea5e"
+    },
+    {
+      "path": "licence.md",
+      "gitBlobSha1": "41951805ac6a5cdb91373db7725fbaa9c004d912"
+    },
+    {
+      "path": "native/Avalonia.Native/Avalonia.Native.macOS.proj",
+      "gitBlobSha1": "2cd758bd4ba3901882b25e7ca43f26eecb8fbec0"
+    },
+    {
+      "path": "native/Avalonia.Native/README.md",
+      "gitBlobSha1": "47e06b996e70c744b1a4d3d52c6e8f8f897c5c21"
+    },
+    {
+      "path": "native/Avalonia.Native/generate-headers.sh",
+      "gitBlobSha1": "fca82fb61fe6679ef91aeff7b4750a2fe3ef003c"
+    },
+    {
+      "path": "native/Avalonia.Native/inc/.gitignore",
+      "gitBlobSha1": "e7aa7fc6a50eeb726dc41b510600e81ab78cf89b"
+    },
+    {
+      "path": "native/Avalonia.Native/inc/avalonia-native-guids.h",
+      "gitBlobSha1": "64fec729a29ef8c8d155931e0425d89d14570927"
+    },
+    {
+      "path": "native/Avalonia.Native/inc/com.h",
+      "gitBlobSha1": "9a3f067dce294cfc114e80efd85e97d6041c7e1e"
+    },
+    {
+      "path": "native/Avalonia.Native/inc/comimpl.h",
+      "gitBlobSha1": "0b09ee66fbe98e1875f89130a027dc54c37259e3"
+    },
+    {
+      "path": "native/Avalonia.Native/inc/noarc.h",
+      "gitBlobSha1": "7d338bf05dcf5e7a03ba055d58f4ffd9dfd8bff8"
+    },
+    {
+      "path": "native/Avalonia.Native/inc/rendertarget.h",
+      "gitBlobSha1": "28572bc56668368d296799564f72334d47960ed1"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/.gitignore",
+      "gitBlobSha1": "358fd08826135d78edade4c49ccdedf5a4a70a4e"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AutoFitContentView.h",
+      "gitBlobSha1": "7f1f7641410ea0722c01fa8f026f4d556406400f"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AutoFitContentView.mm",
+      "gitBlobSha1": "238466ec8d39840c63580f2de64946431bcf0abb"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/Avalonia.Native.OSX.xcodeproj/project.pbxproj",
+      "gitBlobSha1": "e82c150961c2468f98486387373ac648507b37ea"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/Avalonia.Native.OSX.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+      "gitBlobSha1": "4ea7ed7566e569598778dfff08dda4d916e51a40"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/Avalonia.Native.OSX.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "gitBlobSha1": "18d981003d68d0546c4804ac2ff47dd97c6e7921"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/Avalonia.Native.OSX.xcodeproj/xcshareddata/xcschemes/Avalonia.Native.OSX.xcscheme",
+      "gitBlobSha1": "5014c5d43947fc41e4af870d84640d9803582002"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnAccessibility.h",
+      "gitBlobSha1": "4f8b50ecc5f43f18bfb00908f3288b9da3d6ef51"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnAutomationNode.h",
+      "gitBlobSha1": "58bea8caf97a8168be79fd40ec64d18f53b59120"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnPanelWindow.mm",
+      "gitBlobSha1": "b49005de8acd7d431b89d13026d653f7df6e53be"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnString.h",
+      "gitBlobSha1": "958e665180f49746f3b6d662ee3736245c4f3c56"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnString.mm",
+      "gitBlobSha1": "b6964195e1107fa577e3d648a303dd14780998eb"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnTextInputMethod.h",
+      "gitBlobSha1": "dd10ae28b41dcf932cc400465d992312c9068920"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnTextInputMethod.mm",
+      "gitBlobSha1": "a08f3886c82953cce3bde7d2cf7627ce9f3420bd"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnTextInputMethodDelegate.h",
+      "gitBlobSha1": "f5751d93b4951cb9bfa51e77ddfd8f80b8cfa57e"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnView.h",
+      "gitBlobSha1": "030330c90819625dc6d2e54f787c4ee796c12ff7"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnView.mm",
+      "gitBlobSha1": "dccf58cea86bc513517e728ca7d620b64c29bfe3"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/AvnWindow.mm",
+      "gitBlobSha1": "5912ac90aa6d4b9200cd93bcd43ad472869daec9"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/INSWindowHolder.h",
+      "gitBlobSha1": "7c07d6bb4098b89c0046f60bf7811cdff9af0728"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/IWindowStateChanged.h",
+      "gitBlobSha1": "11478724bfc0d6187e45125f460545cef427030a"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/KeyTransform.h",
+      "gitBlobSha1": "95b483ea9a967a3e1d3bdc68fc4684ef0492482e"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/KeyTransform.mm",
+      "gitBlobSha1": "a6056cef9119d50ff34d04072174883d54ac75b1"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/PlatformBehaviorInhibition.mm",
+      "gitBlobSha1": "db054d82efc0a9c64270dd645e2d506e63bb17f3"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/PlatformRenderTimer.mm",
+      "gitBlobSha1": "282f2414f96a467fdda3914a4a35b55cbac2ee77"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/PlatformSettings.mm",
+      "gitBlobSha1": "54d076ff726f8354a8bdb0b17b6131c8906eb0ae"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/PopupImpl.mm",
+      "gitBlobSha1": "1f252ebad3b8157ddb02693385e474629aac762a"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/ResizeScope.h",
+      "gitBlobSha1": "9a43c158feb3306365c5a61f30a7ce89a998adc3"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/ResizeScope.mm",
+      "gitBlobSha1": "9f1177af8b073c938d0bc365ed25bff645a13f49"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/Screens.mm",
+      "gitBlobSha1": "2279dae7c8d3ef934a23bc8c4fd6c3187476c588"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/StorageProvider.mm",
+      "gitBlobSha1": "8e3ad185dea238f1976497fcfb2e565f084ae6a5"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/TopLevelImpl.h",
+      "gitBlobSha1": "0be1439ec21f4ff5d8432b1cc5f6ba2eb54f04c5"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/TopLevelImpl.mm",
+      "gitBlobSha1": "d0b62d9d553baa3f3ca690c03f31c47cb2f9bedd"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/WindowBaseImpl.h",
+      "gitBlobSha1": "4d6dd55da39f61ac49684737806c4c4c4e13d0b2"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/WindowBaseImpl.mm",
+      "gitBlobSha1": "de8e2b6730b44eed341c67e6e5ba0b31baae0cdf"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/WindowImpl.h",
+      "gitBlobSha1": "12fb32624c72a2e03b8146252834a53cdfef4267"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/WindowImpl.mm",
+      "gitBlobSha1": "548d7aaf09e11151eb6686c2fd943172530248e0"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/WindowInterfaces.h",
+      "gitBlobSha1": "d92018343544221887cf096ac309368017a1d1d4"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/WindowProtocol.h",
+      "gitBlobSha1": "0e1091b86ce7d589d6d57ed2d4b3c4f59b4b5c4c"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/app.mm",
+      "gitBlobSha1": "459bf5f8f200178bd008cec94dc59b2a200a469b"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/automation.h",
+      "gitBlobSha1": "5d966372419dc75e5597afa8b1efc79cfb9d2fad"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/automation.mm",
+      "gitBlobSha1": "8750e9986c296b5939a8550af297db8b122c7e88"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/cgl.mm",
+      "gitBlobSha1": "e9633220337e027f3eab7b02f79a67ac0144305a"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/clipboard.h",
+      "gitBlobSha1": "fd0ddbf117ed622ec7d85a1084ebcefb4a175d4f"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/clipboard.mm",
+      "gitBlobSha1": "f050a894c8ce98dc9c8d9f6bdfd7896b29525a93"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/common.h",
+      "gitBlobSha1": "6564a457af4349bd4a5d9488df502ec8b59dac7d"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/controlhost.mm",
+      "gitBlobSha1": "5683a5a9753a206af967f1dff4e650e1b0e2cdd2"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/crapium.h",
+      "gitBlobSha1": "0b27b68c7946380414708d7c51d21a0dbc8b9318"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/crapium.mm",
+      "gitBlobSha1": "962d7e2eda122c6dc1ea3569ab5e28094a694d76"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/cursor.h",
+      "gitBlobSha1": "cc7f765785e7e6699bba92ff1c649acba0ad3ca9"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/cursor.mm",
+      "gitBlobSha1": "9947aa7c53cb8dba5044a34207dded8a39723535"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/deadlock.mm",
+      "gitBlobSha1": "cb1767c90f6327be003adea26ae48f26ef4a30b4"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/dnd.mm",
+      "gitBlobSha1": "aebe4afb88a0f15c346c91da0083d9e3122abdad"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/main.mm",
+      "gitBlobSha1": "2f7e15c8ed88adf02cb28c50b2b736e5458cc9aa"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/memhelp.mm",
+      "gitBlobSha1": "1efee567b4eef632f301de83febb862457351805"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/menu.h",
+      "gitBlobSha1": "72c19eb1200349894fb5c20c6eced15865ecc5d0"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/menu.mm",
+      "gitBlobSha1": "e664ee0ad6ab7b4f358b2e6159cad40fd8322dd7"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/metal.mm",
+      "gitBlobSha1": "05f9fe0e34a535992c4309fd37a293fa5938c62d"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/noarc.mm",
+      "gitBlobSha1": "6a87fc78d01a1246e836a4e078c33b9892ef6cb5"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/platformthreading.mm",
+      "gitBlobSha1": "4d5b28920bbac1be802555ecb8678ea8b9c9f4da"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/rendertarget.mm",
+      "gitBlobSha1": "b44a605803e482b13a744187ec1d71a3d018497a"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/trayicon.h",
+      "gitBlobSha1": "86b61608c44cae69aa774701695c3a72535921a1"
+    },
+    {
+      "path": "native/Avalonia.Native/src/OSX/trayicon.mm",
+      "gitBlobSha1": "3ac42b4f257d540590b1151bd63bda4de4701adf"
+    },
+    {
+      "path": "src/Avalonia.Native/avn.idl",
+      "gitBlobSha1": "414b50b14487401569cd8533a436248ceb6a6f47"
+    }
+  ]
+}

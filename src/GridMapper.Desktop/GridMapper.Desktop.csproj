@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyTitle>Grid Mapper</AssemblyTitle>
+    <Product>Grid Mapper</Product>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets/GridMapper.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../GridMapper.Rendering/GridMapper.Rendering.csproj" />
+    <ProjectReference Include="../GridMapper.Storage/GridMapper.Storage.csproj" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.1.3" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.3" />
+    <PackageReference Include="Avalonia.Controls.ColorPicker" Version="12.1.3" />
+    <AvaloniaResource Include="../GridMapper.Rendering/Assets/NotoSans.ttf" Link="Assets/Fonts/NotoSans.ttf" />
+    <AvaloniaResource Include="Assets/GridMapper.ico" />
+    <AvaloniaResource Include="Assets/GridMapper.png" />
+    <Content Include="../../docs/user/README.md" Link="README.md" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../docs/user/README.ru.md" Link="README.ru.md" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../LICENSE" Link="LICENSE" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../docs/user/NDI/README.md" Link="NDI/README.md" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <AvaloniaResource Include="Assets/NdiLogo.svg" />
+    <EmbeddedResource Include="Localizations/*.json" />
+    <Content Include="Localizations/*.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="Localizations/README.md" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../third_party/ndi/LOGO_NOTICE.md" Link="NDI-LOGO-NOTICE.md" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../third_party/ndi/NOTICE.txt" Link="NDI-ABI-NOTICE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../third_party/avalonia-native/osx-arm64/*" Link="native/osx-arm64/%(Filename)%(Extension)"
+             CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest"
+             Condition="'$(RuntimeIdentifier)' == '' Or '$(RuntimeIdentifier)' == 'osx-arm64'" />
+  </ItemGroup>
+</Project>

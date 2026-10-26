@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../GridMapper.Core/GridMapper.Core.csproj" />
+    <PackageReference Include="SkiaSharp" Version="3.119.4" />
+    <EmbeddedResource Include="Assets/NotoSans.ttf" />
+    <EmbeddedResource Include="Assets/NotoSansMono.ttf" />
+    <None Include="Assets/OFL.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="Assets/OFL-NotoSansMono.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

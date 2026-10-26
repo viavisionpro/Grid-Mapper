@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/GridMapper.Core/GridMapper.Core.csproj" />
+  <Project Path="src/GridMapper.Storage/GridMapper.Storage.csproj" />
+  <Project Path="src/GridMapper.Rendering/GridMapper.Rendering.csproj" />
+  <Project Path="src/GridMapper.Desktop/GridMapper.Desktop.csproj" />
+</Solution>

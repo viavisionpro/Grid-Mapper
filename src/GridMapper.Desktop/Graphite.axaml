@@ -1,0 +1,209 @@
+<Styles xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:GridMapper.Desktop">
+  <Styles.Resources>
+    <Thickness x:Key="ExpanderHeaderPadding">0</Thickness>
+    <Thickness x:Key="ExpanderHeaderBorderThickness">0</Thickness>
+    <Thickness x:Key="ExpanderContentPadding">0,8,0,2</Thickness>
+    <Thickness x:Key="ExpanderContentDownBorderThickness">0</Thickness>
+    <SolidColorBrush x:Key="ExpanderContentBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="ExpanderContentBorderBrush" Color="Transparent" />
+  </Styles.Resources>
+  <Style Selector="Window">
+    <Setter Property="Background" Value="#202023" />
+    <Setter Property="Foreground" Value="#E6E6EB" />
+    <Setter Property="FontSize" Value="13" />
+  </Style>
+  <Style Selector="Button">
+    <Setter Property="Background" Value="#34343B" />
+    <Setter Property="Foreground" Value="#E6E6EB" />
+    <Setter Property="BorderBrush" Value="#48484F" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="3" />
+    <Setter Property="Padding" Value="12,7" />
+    <Setter Property="MinHeight" Value="32" />
+  </Style>
+  <Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="#414149" />
+    <Setter Property="BorderBrush" Value="#656570" />
+  </Style>
+  <Style Selector="Button.danger">
+    <Setter Property="Background" Value="#512A34" />
+    <Setter Property="BorderBrush" Value="#713B49" />
+  </Style>
+  <Style Selector="Button.danger:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="#6B3442" />
+  </Style>
+  <Style Selector="Button.icon">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="4" />
+    <Setter Property="MinWidth" Value="26" />
+  </Style>
+  <Style Selector="Button.active-profile">
+    <Setter Property="BorderBrush" Value="#D4D4DB" />
+    <Setter Property="BorderThickness" Value="2" />
+  </Style>
+  <Style Selector="Button.mode.active">
+    <Setter Property="Background" Value="#62626E" />
+  </Style>
+  <Style Selector="Button#ScreenEdgeSnap.active">
+    <Setter Property="Background" Value="#646080" />
+    <Setter Property="BorderBrush" Value="#9A90B4" />
+  </Style>
+  <Style Selector="Button#ScreenEdgeSnap.active:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="#777195" />
+  </Style>
+  <Style Selector="Button#CanvasTransparency.active:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="#777195" />
+    <Setter Property="BorderBrush" Value="#9A90B4" />
+  </Style>
+  <Style Selector="Button.ndi-active:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="#777195" />
+    <Setter Property="BorderBrush" Value="#A99BC8" />
+  </Style>
+  <Style Selector="ContextMenu.arrangement">
+    <Setter Property="Background" Value="#29292E" />
+    <Setter Property="BorderBrush" Value="#505058" />
+    <Setter Property="Padding" Value="4" />
+    <Setter Property="FontSize" Value="12" />
+  </Style>
+  <Style Selector="ContextMenu.arrangement MenuItem">
+    <Setter Property="Padding" Value="10,5" />
+    <Setter Property="MinHeight" Value="28" />
+  </Style>
+  <Style Selector="TextBox">
+    <Setter Property="Background" Value="#29292E" />
+    <Setter Property="BorderBrush" Value="#66666E" />
+    <Setter Property="BorderThickness" Value="0,0,0,1" />
+    <Setter Property="CornerRadius" Value="2" />
+    <Setter Property="Padding" Value="8,6" />
+    <Setter Property="MinHeight" Value="32" />
+  </Style>
+  <Style Selector="TextBox:focus-within /template/ Border#PART_BorderElement">
+    <Setter Property="BorderBrush" Value="#646080" />
+    <Setter Property="BorderThickness" Value="1" />
+  </Style>
+  <Style Selector="ComboBox">
+    <Setter Property="Background" Value="#29292E" />
+    <Setter Property="BorderBrush" Value="#505058" />
+    <Setter Property="BorderThickness" Value="0,0,0,1" />
+    <Setter Property="MinHeight" Value="32" />
+  </Style>
+  <Style Selector="StackPanel.compact-inspector CheckBox">
+    <Setter Property="MinHeight" Value="26" />
+    <Setter Property="Margin" Value="0,1" />
+    <Setter Property="Padding" Value="6,0,0,0" />
+    <Setter Property="FontSize" Value="12" />
+  </Style>
+  <Style Selector="CheckBox">
+    <Setter Property="MinHeight" Value="28" />
+    <Setter Property="Margin" Value="0,3" />
+    <Setter Property="FontSize" Value="12" />
+  </Style>
+  <Style Selector="Expander">
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Grid RowDefinitions="Auto,Auto">
+          <ToggleButton Name="ExpanderHeader" Content="{TemplateBinding Header}" ContentTemplate="{TemplateBinding HeaderTemplate}"
+                        IsChecked="{Binding IsExpanded, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
+                        HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" />
+          <ContentPresenter Name="ExpanderContent" Grid.Row="1" Content="{TemplateBinding Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}" IsVisible="{TemplateBinding IsExpanded}"
+                            Margin="0,10,0,0" HorizontalAlignment="Stretch" />
+        </Grid>
+      </ControlTemplate>
+    </Setter>
+    <Setter Property="MinHeight" Value="28" />
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="Margin" Value="0,4,0,10" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+  <Style Selector="Expander /template/ ToggleButton#ExpanderHeader">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="0" />
+    <Setter Property="Height" Value="28" />
+    <Setter Property="MinHeight" Value="28" />
+    <Setter Property="FontSize" Value="13" />
+    <Setter Property="FontWeight" Value="Normal" />
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Name="SectionHeaderBackground" Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="1" CornerRadius="2" Padding="0">
+          <local:SectionHeaderPanel>
+            <Path Name="SectionChevron" Data="M4,2 L8,6 L4,10" Width="12" Height="12" Stroke="{TemplateBinding Foreground}" StrokeThickness="1.5" VerticalAlignment="Center" />
+            <ContentPresenter Name="PART_ContentPresenter" ClipToBounds="True" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" FontSize="{TemplateBinding FontSize}" FontWeight="{TemplateBinding FontWeight}" VerticalAlignment="Center" HorizontalAlignment="Stretch" RecognizesAccessKey="True" />
+            <Border Name="SectionHeaderLine" Background="#45454D" IsHitTestVisible="False" />
+          </local:SectionHeaderPanel>
+        </Border>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+  <Style Selector="Expander /template/ ToggleButton#ExpanderHeader:checked /template/ Path#SectionChevron">
+    <Setter Property="Data" Value="M2,4 L6,8 L10,4" />
+  </Style>
+  <Style Selector="Expander /template/ ToggleButton#ExpanderHeader:pointerover">
+    <Setter Property="Background" Value="#35353D" />
+  </Style>
+  <Style Selector="Expander /template/ ToggleButton#ExpanderHeader:pressed">
+    <Setter Property="Background" Value="#3D3D46" />
+  </Style>
+  <Style Selector="Expander /template/ ToggleButton#ExpanderHeader:focus-visible /template/ Border#SectionHeaderBackground">
+    <Setter Property="BorderBrush" Value="#9A90B4" />
+    <Setter Property="BorderThickness" Value="1" />
+  </Style>
+  <Style Selector="Expander:disabled /template/ ToggleButton#ExpanderHeader">
+    <Setter Property="Background" Value="Transparent" />
+  </Style>
+  <Style Selector="ListBox">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="0" />
+  </Style>
+  <Style Selector="ListBoxItem">
+    <Setter Property="Padding" Value="6,3" />
+    <Setter Property="MinHeight" Value="40" />
+    <Setter Property="Margin" Value="0,1" />
+    <Setter Property="CornerRadius" Value="3" />
+  </Style>
+  <Style Selector="ListBoxItem:selected /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="#34343C" />
+  </Style>
+  <Style Selector="ListBox#CanvasLayers ListBoxItem:selected /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="Transparent" />
+  </Style>
+  <Style Selector="ListBox#CanvasLayers ListBoxItem">
+    <Setter Property="FocusAdorner" Value="{x:Null}" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+  <Style Selector="ListBox#CanvasLayers ListBoxItem:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="Transparent" />
+  </Style>
+  <Style Selector="ListBox#CanvasLayers ListBoxItem:focus /template/ ContentPresenter#PART_ContentPresenter">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+  </Style>
+  <Style Selector="Expander.inspector-subsection">
+    <Setter Property="Margin" Value="0,0,0,0" />
+  </Style>
+  <Style Selector="Expander.inspector-subsection /template/ ToggleButton">
+    <Setter Property="FontSize" Value="13" />
+    <Setter Property="Foreground" Value="#C6C5D2" />
+    <Setter Property="Padding" Value="0" />
+  </Style>
+  <Style Selector="Slider.mask-slider /template/ Thumb">
+    <Setter Property="Width" Value="10" />
+    <Setter Property="Height" Value="10" />
+    <Setter Property="MinWidth" Value="10" />
+    <Setter Property="MinHeight" Value="10" />
+  </Style>
+  <Style Selector="Slider.logo-slider /template/ Thumb">
+    <Setter Property="Width" Value="12" />
+    <Setter Property="Height" Value="12" />
+    <Setter Property="MinWidth" Value="12" />
+    <Setter Property="MinHeight" Value="12" />
+  </Style>
+  <Style Selector="TextBlock.muted">
+    <Setter Property="Foreground" Value="#AEADB7" />
+    <Setter Property="FontSize" Value="12" />
+  </Style>
+</Styles>

@@ -1,0 +1,12 @@
+<Project>
+  <!-- Use the pinned SDK's own apphost writer, including PE resources and Mach-O
+       signing, rather than patching executable bytes or adding a wrapper process. -->
+  <UsingTask TaskName="CreateAppHost" AssemblyFile="$(MSBuildToolsPath)/Sdks/Microsoft.NET.Sdk/tools/net10.0/Microsoft.NET.Build.Tasks.dll" />
+  <Target Name="Build">
+    <Error Condition="!Exists('$(SourceHost)') Or !Exists('$(AppAssembly)') Or '$(DestinationHost)' == '' Or '$(AppBinary)' == ''"
+           Text="A restored apphost template, managed assembly, destination and relative application path are required." />
+    <CreateAppHost AppHostSourcePath="$(SourceHost)" AppHostDestinationPath="$(DestinationHost)"
+                   AppBinaryName="$(AppBinary)" IntermediateAssembly="$(AppAssembly)"
+                   WindowsGraphicalUserInterface="$(WindowsGui)" EnableMacOSCodeSign="$(SignMac)" />
+  </Target>
+</Project>
